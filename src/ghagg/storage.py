@@ -5,10 +5,10 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 
 
-def save(data: list[dict], repo: str, since: str, until: str, output_dir: str = "data/json/") -> Path:
+def save(data: list[dict], repo: str, since: str, until: str, label: str, output_dir: str = "data/json/") -> Path:
     owner, name = repo.split("/")
     filename = f"{owner}__{name}__{since}__{until}.json"
-    output_path = Path(output_dir)
+    output_path = Path(output_dir) / label
     output_path.mkdir(parents=True, exist_ok=True)
 
     filepath = output_path / filename
