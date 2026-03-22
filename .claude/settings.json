@@ -1,7 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "plansDirectory": "./plans",
+  "enabledPlugins": {
+  },
   "permissions": {
     "allow": [
+      "Bash(ls -la *)"
     ],
     "deny": [
       "Read(./.env)",
@@ -12,8 +16,5 @@
       "Bash(git add *)",
       "Bash(git push *)"
     ]
-  },
-  "enabledPlugins": {
-    "playwright@claude-plugins-official": true
   }
 }
