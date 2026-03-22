@@ -28,6 +28,6 @@
 
 ## 検証方法
 ```bash
-uv run ghagg 2026 laravel/laravel --since 2026-03-16 --until 2026-03-22
-# data/json/2026/laravel__laravel__2026-03-16__2026-03-22.json が生成されることを確認
+uv run ghagg 2026 example-org/example-app --since 2026-03-16 --until 2026-03-22
+# data/json/2026/example-org__example-app__2026-03-16__2026-03-22.json が生成されることを確認
 ```

@@ -63,7 +63,7 @@ def aggregate(label: str, data_dir: str = "data/json/") -> list[dict]:
 ```json
 [
   {
-    "member": "devajmeireles",
+    "member": "alice-dev",
     "pull_requests": 1,
     "comments": 0,
     "review_comments": 0,
@@ -92,10 +92,10 @@ uv run ghagg fetch --help
 # aggregate の動作確認（既存サンプルデータを使用）
 uv run ghagg aggregate 2026
 
-# 期待される出力例（laravel__laravel__2026-03-16__2026-03-22.json に基づく）:
-# devajmeireles: pull_requests=1, comments=0, review_comments=0, approvals=0
-# jnoordsij: pull_requests=1, comments=0, review_comments=0, approvals=0
-# crynobone: pull_requests=1, comments=0, review_comments=0, approvals=0
-# mjamilasfihani: pull_requests=0, comments=2, review_comments=0, approvals=0
-# taylorotwell: pull_requests=0, comments=1, review_comments=0, approvals=0
+# 期待される出力例（example-org__example-app__2026-03-16__2026-03-22.json に基づく）:
+# alice-dev: pull_requests=1, comments=0, review_comments=0, approvals=0
+# bob-review: pull_requests=1, comments=0, review_comments=0, approvals=0
+# carol-eng: pull_requests=1, comments=0, review_comments=0, approvals=0
+# dave-ops: pull_requests=0, comments=2, review_comments=0, approvals=0
+# eve-lead: pull_requests=0, comments=1, review_comments=0, approvals=0
 ```

@@ -47,14 +47,14 @@ uv run ghagg aggregate <label> [--data-dir <dir>]
 ```json
 [
   {
-    "member": "crynobone",
+    "member": "alice-dev",
     "pull_requests": 1,
     "comments": 0,
     "review_comments": 0,
     "approvals": 0
   },
   {
-    "member": "taylorotwell",
+    "member": "bob-review",
     "pull_requests": 0,
     "comments": 1,
     "review_comments": 0,
@@ -75,11 +75,11 @@ uv run ghagg aggregate <label> [--data-dir <dir>]
 ### 例
 
 ```bash
-uv run ghagg fetch 2025 laravel/laravel --since 2025-03-16 --until 2025-03-22
-# → data/json/2025/laravel__laravel__2025-03-16__2025-03-22.json
+uv run ghagg fetch 2025 example-org/example-app --since 2025-03-16 --until 2025-03-22
+# → data/json/2025/example-org__example-app__2025-03-16__2025-03-22.json
 
-uv run ghagg fetch 2026 laravel/laravel --since 2026-03-16 --until 2026-03-22
-# → data/json/2026/laravel__laravel__2026-03-16__2026-03-22.json
+uv run ghagg fetch 2026 example-org/example-app --since 2026-03-16 --until 2026-03-22
+# → data/json/2026/example-org__example-app__2026-03-16__2026-03-22.json
 ```
 
 ## 取得データ
